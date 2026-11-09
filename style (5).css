@@ -1,0 +1,87 @@
+/* BNR Custom Styling */
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(148, 163, 184, 0.2);
+        border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(148, 163, 184, 0.4);
+    }
+}
+
+/* Glassmorphism subtle effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-card-dark {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+/* ATM / Virtual Banking Card Gradient */
+.bnr-card-gradient {
+    background: linear-gradient(135deg, #800000 0%, #CC0000 50%, #990000 100%);
+}
+
+/* SweetAlert Custom UI Style Override */
+.swal2-popup {
+    border-radius: 1.5rem !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    padding: 1.5rem !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #CC0000 !important;
+    border-radius: 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 0.625rem 1.5rem !important;
+}
+
+.swal2-styled.swal2-cancel {
+    border-radius: 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 0.625rem 1.5rem !important;
+}
+
+/* Smooth Page Transitions */
+.page-fade-enter {
+    animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print Receipt Styling */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #digitalReceiptModal, #digitalReceiptModal * {
+        visibility: visible;
+    }
+    #digitalReceiptModal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
