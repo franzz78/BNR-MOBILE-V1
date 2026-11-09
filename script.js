@@ -32,7 +32,7 @@ let systemSettings = {
     maximumTransfer: 50000000,
     dailyTransferLimit: 100000000,
     maintenanceMode: false,
-    discordWebhookUrl: "https://discord.com/api/webhooks/1546528727024935032/GDeViczgi1AgNmgsCxoOwg0DIfptXCZlfHDrQ8UWWdPaueNR0xyPjRziRPG37TQ1gDqe"
+    discordWebhookUrl: "https://discord.com/api/webhooks/1569346065705209886/s99QwkhBG2mGydwG9Ksfb8M6AZlubhkOXLhieyMDtE7i83saL-6rgKMVBakewyydxr2P"
 };
 let isBalanceHidden = false;
 
