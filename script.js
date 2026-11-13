@@ -25,9 +25,9 @@ let currentUser = null;
 let currentAccount = null;
 let currentView = 'dashboard';
 let systemSettings = {
-    profileChangeFee: 100000,
-    transferFee: 5000,
-    topUpFee: 3000,
+    profileChangeFee: 5000000,
+    transferFee: 10000,
+    topUpFee: 5000,
     minimumTransfer: 10000,
     maximumTransfer: 100000000000000000,
     dailyTransferLimit: 100000000000000000,
