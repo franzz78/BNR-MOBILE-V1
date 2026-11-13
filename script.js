@@ -25,12 +25,12 @@ let currentUser = null;
 let currentAccount = null;
 let currentView = 'dashboard';
 let systemSettings = {
-    profileChangeFee: 50000,
-    transferFee: 0,
-    topUpFee: 0,
+    profileChangeFee: 100000,
+    transferFee: 5000,
+    topUpFee: 3000,
     minimumTransfer: 10000,
-    maximumTransfer: 50000000,
-    dailyTransferLimit: 100000000,
+    maximumTransfer: 100000000000000000,
+    dailyTransferLimit: 100000000000000000,
     maintenanceMode: false,
     discordWebhookUrl: "https://discord.com/api/webhooks/1569346065705209886/s99QwkhBG2mGydwG9Ksfb8M6AZlubhkOXLhieyMDtE7i83saL-6rgKMVBakewyydxr2P"
 };
